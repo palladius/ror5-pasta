@@ -1,46 +1,24 @@
 <h1>Show Article</h1>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
- 
+	<p>
+	  <strong>Title:</strong>
+	  <%= @article.title %>
+	</p>
+	 
+	<p>
+	  <strong>Text:</strong>
+	  <%= @article.text %>
+	</p>
+	 
 <h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
- 
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+
+  <%= render @article.comments %>
+
  
 <h2>Add a comment:</h2>
 
-See Ryan Bates railcast on nested forms: http://railscasts.com/episodes/196-nested-model-form-part-1
+<%= render 'comments/form' %>
 
-< %= form_with(model: [ @article, @article.comments.build ]) do |form| % >
-<%= form_for @article do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
- 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+	 
+	<%= link_to 'Edit', edit_article_path(@article) %> |
+	<%= link_to 'Back', articles_path %>
