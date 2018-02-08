@@ -4,8 +4,14 @@
 
 <p>This rails app contains <b><%= @articles_count %></b> articles!</p>
 
-<img src='/images/pasta.png' />
+<!-- 
+  <img src='/images/pasta.png' />
+-->
+<%= image_tag("pasta.png", :alt => "Spaghetti Arrabbiata") %>
 
+
+<pre>config: <%= @config %>
+</pre>
 <p>
   <%= link_to 'Articles', articles_path %>
 </p>
