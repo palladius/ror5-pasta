@@ -19,3 +19,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+.pasta.env
+public/assets/
+secret-run-locally.sh
+.rake_tasks~

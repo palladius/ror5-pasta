@@ -5,12 +5,35 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+###########################################
+# Riccardo begin 
+
+ruby "~> 2.3"
+
+
 # I can't live without Ryan Bates generators :)
 gem "nifty-generators", :group => :development
 
+## Dockerizing:
+gem 'unicorn', '~> 4.9'
+#gem 'pg', '~> 0.18.3'
+gem 'sidekiq', '~> 4.0.1'
+#gem 'redis-rails', '~> 4.0.0'
+
+
+gem 'mysql2',  '>= 0.3.18', '< 0.5'
+#gem 'activerecord-mysql2-adapter' # needed for mysql..
+#gem 'activerecord-native_db_types_override'
+#gem 'activerecord-jdbcmysql-adapter'
+
+gem 'figaro'
+
+
+# /Riccardo end 
+###########################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
