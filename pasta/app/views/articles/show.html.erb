@@ -1,8 +1,11 @@
 <h1><%= @article.title %></h1>
 
 	<p>
-	  <strong>Text:</strong>
-	  <%= @article.text %>
+	  <strong>Text:</strong> 
+	  <span class='articles_text'><%= @article.text %></span>
+	</p>
+	<p>
+	  <strong>URL:</strong><a href="<%= @article.url %>" ><%= @article.url %></a>
 	</p>
 	 
 <h2>Comments</h2>

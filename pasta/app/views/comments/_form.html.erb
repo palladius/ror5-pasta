@@ -1,9 +1,17 @@
-See also <a href="http://railscasts.com/episodes/196-nested-model-form-part-1">Ryan Bates railcast on nested forms</a>
+<p>Add your comment to the BODY of the form, all other fields are optional.. we respect your anonimity</p>
 
 <%= form_with(model: [ @article, @article.comments.build ]) do |form| %>
   <p>
     <%= form.label :commenter %><br>
     <%= form.text_field :commenter %>
+  </p>
+  <p>
+    <%= form.label :facebook_id %><br>
+    <%= form.text_field :facebook_id %>
+  </p>
+  <p>
+    <%= form.label :twitter_id %><br>
+    <%= form.text_field :twitter_id %>
   </p>
   <p>
     <%= form.label :body %><br>

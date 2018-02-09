@@ -3,6 +3,10 @@
                data: { confirm: 'Are you sure?' } %>
 
   <small><%= comment.updated_at %></small>
+  [
+   <a href="https://twitter.com/<%= comment.twitter_id %>">twitter:<%= comment.twitter_id %></a> 
+   <a href="https://www.facebook.com/<%= comment.facebook_id %>">facebook:<%= comment.facebook_id %></a> 
+  ]
   <strong><%= comment.commenter %></strong>:
   <i><%= comment.body %></i>
 <BR/>

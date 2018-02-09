@@ -14,6 +14,9 @@
   background-color: red;
 }
 
+.articles_text {
+  background-color: #ddf;  
+}
 /*
   Riccardo stuff from gaetest42
 */
@@ -23,11 +26,11 @@
   white-space:nowrap;
 }
 
-nifty_objects, .nifty_objects {
+.nifty_objects {
       font: green ;
 }
 
-important {
+.important {
       font: red 14px;
 }
 

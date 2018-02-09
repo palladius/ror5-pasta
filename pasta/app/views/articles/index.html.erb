@@ -2,24 +2,32 @@
  
 <table>
   <tr>
+    <th colspan="2">
+      <%= link_to image_tag('new.png', size: "16x16", alt: "Add new entry"), new_article_path %>
+    </th>
     <th>Title</th>
     <th>Text (excerpt)</th>
-    <th colspan="2">Links</th>
+    <th>URL</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
-      <td><%= link_to article.title, article_path(article) %></td>
-      <td><%= article.text[0,20] %>..</td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <!-- Actions -->
       <td>
-        <%= link_to 'DEL', article,
+        <%= link_to image_tag('delete.png', size: "16x16", alt: "Delete entry"), article,
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
       </td>
+      <td><%= link_to image_tag('edit.png', size: "16x16", alt: "Edit entry"), edit_article_path(article) %></td>
+      <!-- Real fields -->
+      <td><%= link_to article.title, article_path(article) %></td>
+      <td><%= article.text[0,20] %>..</td>
+      <td><a href="<%= article.url %>" ><%= article.url %></a></td>
     </tr>
   <% end %>
 </table>
 
+<p>Other links</p>
+
 <%= link_to 'Home', root_path %>
-<%= link_to 'New', new_article_path %>
+<%= link_to 'New Article', new_article_path %>

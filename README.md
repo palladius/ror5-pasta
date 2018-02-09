@@ -17,5 +17,6 @@ To get here, I've typed these commands:
     bin/rails generate controller Comments
     # after a while and cleaningh up a bit... and getting to 1.0!
     bin/rails generate migration add_url_to_articles url:string
+    bin/rails generate migration add_social_to_comments facebook_id:string twitter_id:string
 
 Tutorial: http://guides.rubyonrails.org/getting_started.html
