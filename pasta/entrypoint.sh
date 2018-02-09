@@ -17,7 +17,7 @@ fi
 
 # Note: "source .pasta.env.dist" doesnt work without "export", hence the hack in next line. Help appreciated :)
 # Might want to install my Sakura repo from palladius for this to work :) https://github.com/palladius/sakura/tree/master/bin
-cat "$CONFIG_FILE" | remove-comments | prepend "export" > t.entrypoint.sh && source t.entrypoint.sh
+cat "$CONFIG_FILE" | bin/sakura/remove-comments | bin/sakura/prepend "export" > t.entrypoint.sh && source t.entrypoint.sh
 #export DATABASE_URL="mysql2://user:pass@ipaddress:3306/Databasename?encoding=utf8&pool=5&timeout=5000"
 #export RAILS_ENV=development
 #export WORKER_PROCESSES=1

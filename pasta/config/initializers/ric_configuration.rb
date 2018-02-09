@@ -8,7 +8,7 @@ class RicConfiguration
 
   #@app_version = "0.1.001manhouse"
   @app_version =`cat ./VERSION`.strip()
-  @git_version = `git show --pretty=%H`[0..39]
+  @git_version = `git show --pretty=%H`[0..39] rescue "Exception! Probably no git installed (#{$!})"
   @app_name = 'PastaVanillaApp'
   @app_repo_url = 'https://github.com/palladius/ror5-pasta'
   @app_description = 'RoR5 Pasta (goldie RoR 5.0 app by Ricc)'

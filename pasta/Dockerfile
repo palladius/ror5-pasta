@@ -20,6 +20,9 @@ MAINTAINER Riccardo Carlesso <riccardo.carlesso@gmail.com>
 #  * libsqlite3-dev: Per fare andare sqlite3
 RUN apt-get update && apt-get install -qq -y build-essential nodejs libsqlite3-dev mysql-client libmysqlclient-dev git-core curl --fix-missing --no-install-recommends
 
+#RUN git clone https://github.com/palladius/sakura /git-sakura
+#RUN cp /git-sakura/bin/
+
 ENV INSTALL_PATH   /ror5-pasta
 # PROD:  .pasta.env
 # DEV:   .pasta.env.dist

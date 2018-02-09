@@ -2,8 +2,8 @@
 prep:
 	bin/rails db:migrate
 
-run-local:
-	bin/rails s
+#run-local:#
+#	bin/rails s
 
 #create-drkiq-shit:
 #	docker volume create --name pasta-postgres
@@ -33,6 +33,7 @@ build:
 	docker build -t ror5pasta .
 
 docker-run: build
+	@echo "Riccardo nota che dev e' alla porta 3000 e prod e alla 8000."
 	docker run -p 3000:3000 -it ror5pasta
 
 docker-run-debug: build
