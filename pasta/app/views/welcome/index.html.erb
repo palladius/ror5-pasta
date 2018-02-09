@@ -1,7 +1,13 @@
 <h1>RoR5 Pasta - Welcome</h1>
 
+<img src="<%= asset_path "riccardo-carlesso.jpg" %>" style="float:right;width:100px;height:100px;" />
+
 <p>Bella Ricc! Benvenuto in Rails!</p>
 
 <p>This rails app contains <b><%= @articles_count %></b> <%= link_to 'articles', articles_path %> and <%= @comments_count %> comments - stika!</p>
 
-<%= image_tag("pasta.png", :alt => "Spaghetti Arrabbiata") %>
+BUG001: Image is broken in prod. <br/>
+
+<a href="<%= asset_path "pasta.png" %>" >
+  <%= image_tag("pasta.png", :alt => "Spaghetti Arrabbiata") %>
+</a>
