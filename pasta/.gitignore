@@ -25,3 +25,4 @@ secret-run-locally.sh
 .rake_tasks~
 t.sh
 t.prod.sh
+t.entrypoint.sh
