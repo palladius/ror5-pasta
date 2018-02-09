@@ -6,13 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+db_seed_ver = '1.0'
+db_seed_time = Time.now
+
 if  Article.count > 0
   print "I found already #{Article.count} articles: aborting rake seed which should populate an empty DB..\n"
   exit 0
 end
 
 
-a = Article.create(title: 'rake db:Seed', text: "Created by rake db:seed", url: "https://github.com/palladius/ror5-pasta/blob/master/pasta/db/seeds.rb")
+a = Article.create(title: "rake db:Seed v#{db_seed_ver}", text: "Created by rake db:seed v#{db_seed_ver} on #{db_seed_time}", url: "https://github.com/palladius/ror5-pasta/blob/master/pasta/db/seeds.rb")
 Comment.create(commenter: 'Riccardo', body: 'whuere geil', article: a )
 Comment.create(commenter: 'Kate', body: 'not my favorite', article: a )
 

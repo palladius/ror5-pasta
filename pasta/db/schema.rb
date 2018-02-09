@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180209081023) do
 
-  create_table "articles", force: :cascade do |t|
+  create_table "articles", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
     t.text "text"
     t.datetime "created_at", null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20180209081023) do
     t.string "url"
   end
 
-  create_table "comments", force: :cascade do |t|
+  create_table "comments", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "commenter"
     t.text "body"
     t.integer "article_id"
@@ -31,4 +31,5 @@ ActiveRecord::Schema.define(version: 20180209081023) do
     t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
+  add_foreign_key "comments", "articles"
 end
