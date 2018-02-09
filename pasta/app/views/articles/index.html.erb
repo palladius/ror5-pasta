@@ -23,7 +23,7 @@
       <!-- Real fields -->
       <td><%= link_to article.title, article_path(article) %></td>
       <td><%= article.text[0,20] %>..</td>
-      <td>TODO article.count_comments </td>
+      <td><%= article.number_of_comments %></td>
       <td class='articles_url' ><a href="<%= article.url %>" ><%= article.url %></a></td>
     </tr>
   <% end %>
