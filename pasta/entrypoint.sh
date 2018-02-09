@@ -40,4 +40,4 @@ echo "==========================================="
 #bundle exec unicorn -c config/unicorn.rb
 $COMMAND
 
-echo "$0 $* [END - if any]"
+echo "$0 $* [END RET='$?']"

@@ -1,3 +1,5 @@
+2017-02-09 1.0.6  Making sense out of assets (and added POOP images in public to see the difference. SHouldnt see in prod). 
+                  Fixed logger issue and added LOG to stdout in Railsy way via `RAILS_LOG_TO_STDOUT`. Docker is so close now!
 2017-02-09 1.0.5  Added `db_seed_ver` to "version" db seed.
 2017-02-09 1.0.4  DRYed the configs. Added instructions to install this.
 2017-02-09 1.0.3  Added authentication via ENV variable once again. Docker wins!

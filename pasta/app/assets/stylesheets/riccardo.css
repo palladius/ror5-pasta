@@ -14,9 +14,6 @@
   background-color: red;
 }
 
-.articles_text {
-  background-color: #ddf;  
-}
 /*
   Riccardo stuff from gaetest42
 */
@@ -24,6 +21,13 @@
 .footer {
   background:url(/images/powered_by_palladius.png) center right no-repeat ;
   white-space:nowrap;
+  opacity: 0.5;
+}
+
+.merdina {
+  background:url(/images/poop.png) center right no-repeat ;
+  white-space:nowrap;
+  opacity: 0.3;
 }
 
 .nifty_objects {
@@ -34,7 +38,7 @@
       font: red 14px;
 }
 
-
 .sl_green {
   font: green;
 }
+

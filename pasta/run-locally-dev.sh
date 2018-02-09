@@ -2,7 +2,6 @@
 
 set -x
 
-
 COMMAND="${2:-bundle exec unicorn -c config/unicorn.rb}"
 
 # Development:

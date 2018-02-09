@@ -1,17 +1,20 @@
 # https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
----
+#---
+#default: &default
+#  adapter: sqlite3
+#  pool: 5
+#  timeout: 5000
 
-default: &default
+development:
   adapter: sqlite3
   pool: 5
   timeout: 5000
-
-development:
-  <<: *default
   database: db/development.sqlite3
 
 test:
-  <<: *default
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
   database: db/test.sqlite3
 
 # Likely MySQL2 ;)
