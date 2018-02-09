@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#set -x
+set -x
+
+
+COMMAND="${2:-bundle exec unicorn -c config/unicorn.rb}"
 
 # Development:
 
@@ -20,11 +23,13 @@
 cat .pasta.env.dist | remove-comments | prepend export > t.sh ; source t.sh
 
 echo "==========================================="
-echo "$0 $* [START]"
+echo "Program: $0 $* [START]"
+echo "Command: $COMMAND"
 echo RAILS_ENV: $RAILS_ENV
 echo DATABASE_URL: $DATABASE_URL
 
 # bundle install
-bundle exec unicorn -c config/unicorn.rb
+#bundle exec unicorn -c config/unicorn.rb
+$COMMAND
 
 echo "$0 $* [END]"
