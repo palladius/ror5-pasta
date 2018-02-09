@@ -1,4 +1,5 @@
 
+2017-02-09 1.0.3  Added authentication via ENV variable once again. Docker wins!
 2017-02-09 1.0.2  Added nice icons. Two migrations: URLs to Articles, facebook/twitter_id to comments. Still quite silly...
 2017-02-09 1.0.1  Added welcome/about. Fixed app_name vars. Added favico and CSS.
 2017-02-08 1.0.0  Fixed finally mysql2!! Now app is fully ENV_variablized :)

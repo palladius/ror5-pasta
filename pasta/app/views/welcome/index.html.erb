@@ -2,13 +2,6 @@
 
 <p>Bella Ricc! Benvenuto in Rails!</p>
 
-<p>This rails app contains <b><%= @articles_count %></b> articles!</p>
+<p>This rails app contains <b><%= @articles_count %></b> <%= link_to 'articles', articles_path %> and <%= @comments_count %> comments - stika!</p>
 
 <%= image_tag("pasta.png", :alt => "Spaghetti Arrabbiata") %>
-
-
-<pre>config: <%= @config %>
-</pre>
-<p>
-  <%= link_to 'Articles', articles_path %>
-</p>

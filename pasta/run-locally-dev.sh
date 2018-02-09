@@ -10,6 +10,8 @@ export RAILS_ENV=development
 export WORKER_PROCESSES=1
 export LISTEN_ON="0.0.0.0:3000"
 export APP_NAME="pasta-vanilla-dev"
+export BASIC_AUTH_USER="riccardo"
+export BASIC_AUTH_PASS="ch4ng3me"
 
 # bundle install
 bundle exec unicorn -c config/unicorn.rb
