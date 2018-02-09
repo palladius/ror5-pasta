@@ -1,8 +1,9 @@
-<h1><%= @article.title %></h1>
+<h1><%= @article.title.with_emoji_images %></h1>
 
+<%= 'Tryin an emoji here ;-) lets see <3'.with_emoji_images %>
 	<p>
 	  <strong>Text:</strong> 
-	  <span class='articles_text'><%= @article.text %></span>
+	  <span class='articles_text'><%= @article.text.with_emoji_images %></span>
 	</p>
 	<p>
 	  <strong>URL:</strong><a href="<%= @article.url %>" ><%= @article.url %></a>

@@ -1,3 +1,4 @@
+2017-02-09 1.0.08 Adding EMOJIs! Also working on dockerization. For now added git/curl.
 2017-02-09 1.0.08 Getting comments number - not it works on listings.
 2017-02-09 1.0.7  dunno.
 2017-02-09 1.0.6  Making sense out of assets (and added POOP images in public to see the difference. SHouldnt see in prod). 

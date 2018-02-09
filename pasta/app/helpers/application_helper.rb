@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+  require 'emoji/string_ext'
+
   #helper_method :set_variables_from_helper
   #before_filter obsoleted by before_action:
   #before_action :set_variables
