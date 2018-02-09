@@ -1,10 +1,13 @@
 <hr/>
 
-<div class='header'>
+<div class='footer'>
 	<center>
-		<b><%= @app_name %></b> v.<b><%= @app_version %></b> | 
-		Rails v.<b><%= Rails.version %></b> | 
-		env: <b><%= Rails.env %></b> |
-		<a href='https://github.com/palladius/ror5-pasta' >Code on GitHub</a>  
+		<div  >
+			<b><%= @app_name %></b> v.<b><%= @app_version %></b> 
+			  <br/>
+			Rails v.<b><%= Rails.version %></b> | 
+			env: <b ><span class="env-<%= Rails.env %>" ><%= Rails.env %></span></b> |
+			<a href='https://github.com/palladius/ror5-pasta' >Code on GitHub</a>  
+		</div>
 	</center>
 </div>

@@ -20,4 +20,6 @@ b = Article.create(title: 'About this app (pasta)', text: "This is Riccardo Carl
 Comment.create(commenter: 'Riccardo', body: 'Can I click on https://github.com/palladius/ror5-pasta ?', article: b )
 Comment.create(commenter: 'Nik C', body: 'I jolly well can, my favorite bloke!', article: b )
 
-
+c = Article.create(title: 'RyanBates article re Nested Models', text: "See: http://railscasts.com/episodes/196-nested-model-form-part-1")
+Comment.create(commenter: 'Riccardo', body: 'Can I click on https://github.com/palladius/ror5-pasta ?', article: c )
+Comment.create(commenter: 'Nik C', body: 'I jolly well can, my favorite bloke!', article: c )

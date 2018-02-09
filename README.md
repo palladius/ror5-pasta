@@ -15,5 +15,7 @@ To get here, I've typed these commands:
     bin/rails generate model Comment commenter:string body:text article:references
     rails db:migrate
     bin/rails generate controller Comments
+    # after a while and cleaningh up a bit... and getting to 1.0!
+    bin/rails generate migration add_url_to_articles url:string
 
 Tutorial: http://guides.rubyonrails.org/getting_started.html

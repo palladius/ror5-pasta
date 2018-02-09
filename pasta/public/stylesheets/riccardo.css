@@ -1,0 +1,37 @@
+/* 
+  riccardo.css
+*/
+
+.env-development {
+  background-color: yellow;
+}
+
+.env-production {
+  background-color: green;
+}
+
+.env-test {
+  background-color: red;
+}
+
+/*
+  Riccardo stuff from gaetest42
+*/
+
+.footer {
+  background:url(/images/powered_by_palladius.png) center right no-repeat ;
+  white-space:nowrap;
+}
+
+nifty_objects, .nifty_objects {
+      font: green ;
+}
+
+important {
+      font: red 14px;
+}
+
+
+.sl_green {
+  font: green;
+}
