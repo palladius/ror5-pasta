@@ -1,4 +1,7 @@
-2017-02-09 1.0.08 Adding EMOJIs! Also working on dockerization. For now added git/curl.
+2017-02-09 1.0.11 finally dockerized version works in PROD too!
+                  Secrets are fucked up so I looked at secrets.yml and found a buig. Lets see if this fixes it.
+2017-02-09 1.0.10 cleanup. Better docker.
+2017-02-09 1.0.09 Adding EMOJIs! Also working on dockerization. For now added git/curl.
 2017-02-09 1.0.08 Getting comments number - not it works on listings.
 2017-02-09 1.0.7  dunno.
 2017-02-09 1.0.6  Making sense out of assets (and added POOP images in public to see the difference. SHouldnt see in prod). 
