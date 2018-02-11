@@ -21,11 +21,13 @@ docker-tag-and-push-riccardo-only:
 	# latest local
 	docker tag ror5pasta-prod:latest  ror5pasta-prod:$(VERSION)
 	# remote name, but still local
-	docker tag ror5pasta-prod:latest     gcr.io/ric-cccwiki/ror5pasta-prod:latest
 	docker tag ror5pasta-prod:$(VERSION) gcr.io/ric-cccwiki/ror5pasta-prod:$(VERSION)
+	docker tag ror5pasta-prod:latest     gcr.io/ric-cccwiki/ror5pasta-prod:latest
 	# push remotes from locally to properly remote .
-	gcloud docker -- push gcr.io/ric-cccwiki/ror5pasta-prod:latest
 	gcloud docker -- push gcr.io/ric-cccwiki/ror5pasta-prod:$(VERSION)
+	# this might fail so i keep it last
+	gcloud docker -- push gcr.io/ric-cccwiki/ror5pasta-prod:latest
+	@echo "Riccardo pls open and check: https://console.cloud.google.com/gcr/images/ric-cccwiki/GLOBAL/ror5pasta-prod"
 
 docker-run-riccardo-prod-version:
 	gcloud docker -- run -p 8000:8000 -it gcr.io/ric-cccwiki/ror5pasta-prod
