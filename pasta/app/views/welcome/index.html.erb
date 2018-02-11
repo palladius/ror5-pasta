@@ -1,4 +1,4 @@
-<h1>RoR5 Pasta - Welcome</h1>
+<h1>[<%= Rails.env %>] RoR5 Pasta - Welcome</h1>
 
 <img src="<%= asset_path "riccardo-carlesso.jpg" %>" style="float:right;width:100px;height:100px;" />
 
@@ -12,5 +12,8 @@ BUG001: Image is broken in prod. <br/>
   <%= image_tag("pasta.png", :alt => "Spaghetti Arrabbiata") %>
 </a>
 
+<!-- Now both work :) so this test is pointless
 Lets try with "asset_path instead"
 <img src="<%= asset_path "pasta.png" %>" />
+
+-->

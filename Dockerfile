@@ -32,8 +32,8 @@ RUN bundle install
 COPY pasta/ .
 RUN bundle install
 
-RUN echo Riccardo test:     APP_NAME="$APP_NAME"
-RUN echo Riccardo test: DATABASE_URL="$DATABASE_URL"
+#RUN echo Riccardo test:     APP_NAME="$APP_NAME"
+#RUN echo Riccardo test: DATABASE_URL="$DATABASE_URL"
 
 RUN ./entrypoint.sh $VARS_FILE "bundle exec rake assets:precompile"
 
@@ -41,7 +41,8 @@ RUN ./entrypoint.sh $VARS_FILE "bundle exec rake assets:precompile"
 VOLUME ["$INSTALL_PATH/public"]
 
 # The default command that gets ran will be to start the Unicorn server.
-#CMD bundle exec unicorn -c config/unicorn.rb
+
 #CMD ./precompile-assets.sh
 CMD ./entrypoint.sh $VARS_FILE "bundle exec rake assets:precompile"
+
 CMD ./entrypoint.sh $VARS_FILE

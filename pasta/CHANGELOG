@@ -1,3 +1,4 @@
+2017-02-11 1.0.12 Images in prod seem to work now.
 2017-02-09 1.0.11 finally dockerized version works in PROD too!
                   Secrets are fucked up so I looked at secrets.yml and found a buig. Lets see if this fixes it.
 2017-02-09 1.0.10 cleanup. Better docker.
