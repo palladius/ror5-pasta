@@ -1,3 +1,6 @@
+Note: this has NOTHING to do with pasta, its rather a vanilla app I wrote some time ago.
+For up to date Pasta app, see https://github.com/palladius/pasta/ (which i recently upgraded to Rails 7!)
+
 # Synopsis
 
 This is my Vanilla app on Ruby on Rails.
